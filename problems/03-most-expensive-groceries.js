@@ -20,11 +20,40 @@ mostExpensiveGroceries function to solve the problem.
 */
 
 function costOfGroceries(groceries) {
-  // Your code here 
+  let totalCost = 0;
+
+  for (let i = 0; i < groceries.length; i++) {
+  let item = groceries[i]
+
+    if (item === "butter") {
+        totalCost += 1;
+    } else if (item === "eggs") {
+        totalCost += 2;
+    } else if (item === "milk") {
+        totalCost += 3;
+    } else if (item === "bread") {
+        totalCost += 4;
+    } else if (item === "cheese") {
+       totalCost += 5;
+    }
+  }
+
+  return totalCost;
 }
 
 function mostExpensiveGroceries(groceriesList) {
-  // Your code here 
+  let maxCost = -1;
+  let maxIndex = -1;
+
+  for (let i = 0; i < groceriesList.length; i++) {
+    let currentCost = costOfGroceries(groceriesList[i]);
+      if (currentCost > maxCost) {
+        maxCost = currentCost;
+        maxIndex = i;
+    }
+  }
+
+    return maxIndex;
 }
 
 

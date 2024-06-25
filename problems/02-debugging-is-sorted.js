@@ -6,8 +6,8 @@ code is not working correctly. Help them fix it!
 */
 
 function isSorted(nums) {
-  for (let i = 0; i < nums.length; i++) {
-    if (nums[i - 1] < nums[i]) {
+  for (let i = 1; i < nums.length; i++) {
+    if (nums[i - 1] > nums[i]) {
       return false;
     }
   }
