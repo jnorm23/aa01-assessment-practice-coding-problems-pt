@@ -6,12 +6,12 @@ code is not working correctly. Help them fix it!
 */
 
 function isSorted(nums) {
-  for (let i = 1; i < nums.length; i++) {
-    if (nums[i - 1] > nums[i]) {
-      return false;
+  for (let i = 1; i < nums.length; i++) { 
+    if (nums[i - 1] > nums[i]) { // Check if current element is greater than the previous one
+      return false; // If not sorted in ascending order return false
     }
   }
-  return true;
+  return true; // If the array is sorted in ascending order return true
 }
 
 // console.log(isSorted([1]));                // true

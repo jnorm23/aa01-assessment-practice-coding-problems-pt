@@ -16,19 +16,19 @@ modified in some way. The operations are:
 
 function stringChanger(word, operation) {
   if (operation === "capitalize") {
-    return word.charAt(0).toUpperCase() + word.slice(1);
+    return word.charAt(0).toUpperCase() + word.slice(1); // Capitalize the first letter
   } else if (operation === "uppercase") {
-      return word.toUpperCase();
+      return word.toUpperCase(); // Capitalize every letter
   } else if (operation === "double") {
-      return word + word;
+      return word + word; // Return the word twice in a row
   } else if (operation === "reverse") {
-      let reversedWord = "";
+      let reversedWord = ""; // Return the string with letters in reverse order
       for (let i = word.length - 1; i >= 0; i--) {
         reversedWord += word[i];
       }
       return reversedWord;
   } else {
-      return word;
+      return word; // Invalid operation, return the word unchanged
   }
 }
 
