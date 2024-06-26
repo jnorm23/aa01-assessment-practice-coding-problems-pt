@@ -49,7 +49,7 @@ function mostExpensiveGroceries(groceriesList) {
     let currentCost = costOfGroceries(groceriesList[i]); // Calculates the 'currentCost' using the 'costOfGroceries' function for each inner array
       if (currentCost > maxCost) { // If 'currentCost' is greater than 'maxCost'
         maxCost = currentCost; // It updates 'maxCost' and 'maxIndex' to the current values
-        maxIndex = i; // Making sure it keeps track of the most expensive list
+        maxIndex = i; // Make sure it keeps track of the most expensive list
     }
   }
 
